@@ -1,0 +1,14 @@
+nav {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.custom-button {
+  border-radius: 10px;
+  margin-left: 10px;
+  color: black !important;
+}
+
+main {
+  padding: 10px;
+}
