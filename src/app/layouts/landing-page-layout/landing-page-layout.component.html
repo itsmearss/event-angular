@@ -1,0 +1,20 @@
+<nav class="bg-blue-700 text-white py-4 px-8">
+  <div class="container mx-auto justify-between items-center flex">
+    <h1 class="text-xl font-bold">Event</h1>
+    <ul class="flex space-x-6">
+      <li><a [routerLink]="['/']" class="hover:underline">Home</a></li>
+      <li><a [routerLink]="['/event']" class="hover:underline">Event</a></li>
+      <li><a [routerLink]="['/about']" class="hover:underline">About</a></li>
+    </ul>
+    <a
+      [routerLink]="'/login'"
+      class="btn bg-gray-800 px-3 py-2 rounded-md font-bold"
+    >
+      Login
+    </a>
+  </div>
+</nav>
+
+<div class="container mx-auto py-5">
+  <router-outlet></router-outlet>
+</div>

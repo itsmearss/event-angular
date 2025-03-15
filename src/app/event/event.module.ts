@@ -12,11 +12,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule, MatLabel } from '@angular/material/form-field';
 import { MatInput } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
-import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { provideNativeDateAdapter } from '@angular/material/core';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatIconModule } from '@angular/material/icon';
 import { EditEventComponent } from './edit-event/edit-event.component';
+import { DetailEventComponent } from './detail-event/detail-event.component';
 
 const routes: Routes = [
   {
@@ -46,6 +45,7 @@ const routes: Routes = [
     NewEventComponent,
     FormEventComponent,
     EditEventComponent,
+    DetailEventComponent,
   ],
   imports: [
     CommonModule,

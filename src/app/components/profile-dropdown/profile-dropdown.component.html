@@ -1,0 +1,34 @@
+<div class="relative inline-block text-left">
+  <div>
+    <button
+      (click)="toggleDropdown()"
+      class="flex items-center space-x-2 bg-gray-200 px-4 py-2 rounded-lg"
+    >
+      <span class="font-medium">User</span>
+      <svg
+        class="w-5 h-5"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M19 9l-7 7-7-7"
+        ></path>
+      </svg>
+    </button>
+  </div>
+  <div
+    *ngIf="isOpen"
+    class="absolute right-0 mt-2 w-48 bg-white border rounded-lg shadow-lg"
+  >
+    <a
+      [routerLink]="'/login'"
+      class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+      >Keluar</a
+    >
+  </div>
+</div>
